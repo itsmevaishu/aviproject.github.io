@@ -1,0 +1,266 @@
+/* CSS remains unchanged from the previous code snippet */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding-bottom: 20px; /* Add padding to create separation */
+}
+
+.logo-container {
+    background-color: white;
+    padding: 10px; /* Adding padding to ensure white background */
+    display: block; /* Ensure the container fits the content */
+}
+
+.logo {
+    width: 55px;
+    height: 64px;
+}
+
+.heading {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.sub-heading {
+    color: red;
+}
+
+.subscript {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.incident-report-container {
+    margin-top: 20px; /* Add margin to separate the incident report section */
+}
+
+.incident-report-form {
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.incident-report-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.incident-report-form input[type="date"],
+.incident-report-form input[type="time"],
+.incident-report-form input[type="text"],
+.incident-report-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.incident-report-form input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.incident-report-form input[type="submit"]:hover {
+    background-color: darkred;
+}
+/* Add the provided CSS code here */
+.btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    margin-left: 10px; /* Add margin to separate from the add-row button */
+    cursor: pointer;
+}
+
+.incident-report-form .delete-row-btn:hover {
+    background-color: #ff453a;
+}
+
+.incident-report-form .delete-row-btn:focus {
+    outline: none;
+}
+
+.incident-report-form #add-row-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.incident-report-form #add-row-btn:hover {
+    background-color: #45a049;
+}
+
+.incident-report-form #add-row-btn:focus {
+    outline: none;
+}
+/* Delete button styles */
+.incident-report-form .delete-row-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    margin-left: 10px; /* Add margin to separate from the add-row button */
+    cursor: pointer;
+}
+
+.incident-report-form .delete-row-btn:hover {
+    background-color: #d32f2f;
+}
+
+.incident-report-form .delete-row-btn:focus {
+    outline: none;
+}
+
+/* Description box styles */
+.incident-description {
+    margin-top: 20px;
+}
+
+.description-heading {
+    font-size: 20px;
+    color: red;
+}
+
+.subscript {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.description-text {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+}
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 55px;
+    height: 64px;
+}
+
+.heading {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subscript {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.incident-report-form {
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.incident-report-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.incident-report-form input[type="date"],
+.incident-report-form input[type="time"],
+.incident-report-form input[type="text"],
+.incident-report-form select,
+.incident-report-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.incident-report-form textarea {
+    resize: vertical;
+}
+
+.incident-report-form input[type="submit"],
+.incident-report-form .btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    .heading {
+        font-size: 48px;
+    }
+
+    .sub-heading {
+        font-size: 32px;
+    }
+
+    .incident-report-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+/* Adjusted styles for the "Incident Report" heading */
+/* Adjusted styles for the "Incident Report" heading */
+.sub-heading {
+    color: red;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Center align the text */
+}
