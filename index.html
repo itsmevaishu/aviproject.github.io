@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Incident Report Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+    <div class="container">
+        
+        <h1 class="heading">SCHOOL INCIDENT REPORT FORM</h1>
+        <p class="subscript">5 mins estimated time to complete</p>
+    </div>
+    <div class="incident-report-container">
+        <h2 class="sub-heading">Incident Report</h2>
+        <form action="#" method="post" class="incident-report-form" id="incident-form">
+            <label for="report-date">Date of Report:</label>
+            <input type="date" id="report-date" name="report-date" required>
+            <br>
+            <label for="incident-date">Date of Incident:</label>
+            <input type="date" id="incident-date" name="incident-date" required>
+            <br>
+            <label for="incident-time">Time of Incident:</label>
+            <input type="time" id="incident-time" name="incident-time" required>
+            <br>
+            <label for="incident-place">Place of Incident:</label>
+            <input type="text" id="incident-place" name="incident-place" required>
+            <br>
+            <label for="people-involved">People Involved:</label>
+            <input type="text" id="people-involved" name="people-involved" required>
+            <p class="subscript">List details of persons e.g. students/staff involved (including casualties, witnesses) in the incident. Do not include NRICs of people involved.</p>
+            <div id="dynamic-inputs">
+                <div class="row">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" class="full-name" name="full-name[]" required>
+                    <label for="class">Class:</label>
+                    <input type="text" class="class" name="class[]" required>
+                    <label for="involvement">Involvement:</label>
+                    <select class="involvement" name="involvement[]" required>
+                        <option value="">Select</option>
+                        <option value="casualty">Casualty</option>
+                        <option value="witness">Witness</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" id="add-row-btn">Add Another Row</button>
+            <br>
+<div class="incident-description">
+    <h3 class="description-heading">What Happened?</h3>
+    <p class="subscript">A detailed description of the issue/incident, including the activities of students/staff who were involved at the incident.</p>
+    <textarea class="description-text" name="what-happened" id="what-happened" cols="30" rows="5"></textarea>
+</div>
+
+<div class="incident-description">
+    <h3 class="description-heading">Follow-up Action(s)</h3>
+    <p class="subscript">What actions were taken after the incident?</p>
+    <textarea class="description-text" name="follow-up-action" id="follow-up-action" cols="30" rows="5"></textarea>
+</div>
+
+<div class="incident-description">
+    <h3 class="description-heading">Latest Development, if any</h3>
+    <p class="subscript">E.g. Days of medical/hospitalization leave</p>
+    <textarea class="description-text" name="latest-development" id="latest-development" cols="30" rows="5"></textarea>
+</div>
+<label for="sl">Which SL(s) is the incident reported to:</label>
+<input type="text" id="sl" name="sl">
+
+<label for="date-reported">Date of incident reported to the SL(s):</label>
+<input type="date" id="date-reported" name="date-reported">
+
+<label for="time-reported">Time of incident reported to the SL(s):</label>
+<input type="time" id="time-reported" name="time-reported">
+<h3>Submitted By:</h3>
+
+<label for="submitter-name">Submitter's Name:</label>
+<input type="text" id="submitter-name" name="submitter-name" required>
+
+<label for="appointment">Appointment:</label>
+<input type="text" id="appointment" name="appointment">
+
+<label for="contact-hp">Contact No. (HP):</label>
+<input type="text" id="contact-hp" name="contact-hp" pattern="[0-9]{10}" required>
+
+<label for="contact-office">Contact No. (Office) (optional):</label>
+<input type="text" id="contact-office" name="contact-office" pattern="[0-9]{10}">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
